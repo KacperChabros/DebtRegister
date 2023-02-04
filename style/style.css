@@ -1,0 +1,433 @@
+body{
+    font-family: 'Lato';
+    background-color: #404040;
+}
+#container{
+    width: 900pt;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    min-height: 690pt;
+}
+header{
+    background-color: #47e3ff;
+    padding: 15px 10px 10px 10px;
+    margin-bottom: 0px;
+}
+nav{
+    background-color: #ff6347;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    font-size: 18pt;
+    background-color: #ff6347;
+    width: 187.5pt;
+    border-left: 1px dashed red;
+    text-align: center;
+    vertical-align:middle;
+    position: relative;
+    margin: 0;
+}
+nav li:last-child, ul.dropdown li{
+    border-right: 1px dashed red;
+}
+ul.dropdown li{
+    border-bottom: 1px dashed red;
+}
+ul.dropdown li:first-child{
+    border-top: 1px dashed red;
+}
+nav a:link, a:visited{
+    display: inline-block;
+    width: 250px;
+    padding: 20px 0px;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+nav a:hover, a:active{
+    background-color: #c54e39;
+}
+ul li ul.dropdown{
+    min-width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+i{
+    margin-right: 10px;
+}
+div h1{
+    margin-top: 50pt;
+    line-height: 30pt;
+    vertical-align: middle;
+}
+#news{
+    width: 100%;
+}
+#news h1{
+    padding: 100pt 0pt 20pt 20pt;
+    font-size: 60pt;
+    text-align: left;
+    border-bottom: #ff6347 2px dashed;
+}
+section h1{
+    font-size: 24pt;
+}
+h2{
+    text-align: left;
+    margin-left: 20pt;
+    width: max-content;
+    border-bottom: #ff6347 1px dashed;
+}
+p{
+    text-align: justify;
+    font-size: 14pt;
+    margin: 0pt 20pt 20pt 20pt;
+}
+ul{
+    margin-top: 40pt;
+    text-align: left;
+    font-size: 15pt;
+}
+li{
+    margin: 20pt;
+}
+form{
+    text-align: center;
+}
+input,textarea{
+    font-size: 12pt;
+    text-align: center;
+    padding: 15px;
+    margin: 18px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 30px;
+    border: #ff6347 2px solid;
+    transition: 0.5s;
+    width: 30%;
+}
+input[type="submit"]{
+    width: 20%;
+    cursor: pointer;
+    font-weight: bold;
+}
+textarea{
+    height: 50pt;
+}
+input[type="text"]:hover, input[type="password"]:hover, input[type="date"]:hover, input[type="file"]:hover, input[type="number"]:hover, textarea:hover{
+    width: 50%;
+    border: 2px solid #47e3ff;
+}
+input[type="submit"]:hover{
+    border: 2px solid #47e3ff;
+    background-color: #47e3ff;
+}
+p.invalid, p.valid{
+    text-align: center;
+    font-size: 18pt;
+    text-transform: uppercase;
+    padding-bottom: 10pt;
+}
+td p.invalid, td p.valid{
+    font-size: 14pt;
+    padding: 0;
+    margin: 0;
+}
+p.invalid{
+    color: red;
+}
+p.invalidSmall{
+    text-align: center;
+    font-size: 12pt;
+    padding: 0;
+    margin: 0;
+    color: red;
+    width: 100%;
+}
+p.valid{
+    color: green;
+}
+input p.invalid{
+    font-size: 2pt;
+}
+table{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+td input[type="password"]{
+    width: 55%;
+}
+td input[type="password"]:hover{
+    width: 65%;
+}
+td input[type="submit"]{
+    width: 35%;
+}
+td input[type="radio"]{
+    margin: 0; 
+    padding: 10pt;
+    width: 15%;
+}
+input:disabled{
+    background-color: rgb(173, 172, 172);
+    cursor: default;
+}
+.first{
+    width: 25%;
+    text-align: left;
+}
+.second{
+    width: 50%;
+}
+.third{
+    width: 25%;
+}
+td{
+    border-bottom: #ff6347 1px dashed;
+}
+.add td{
+    border-bottom: unset;
+    width: 50%;
+}
+.search td{
+    border-bottom: unset;
+    width: 18%;
+}
+.searchInput{
+    width: 70%;
+}
+.searchInput:hover{
+    width: 70% !important;
+}
+.selectHeader{
+    display: inline-block;
+    width: max-content;
+    margin-right: 10pt;
+}
+.customSelect, .customSelectTall, select.delInput{
+    width: 20%;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    min-height: 24pt;
+    border: 2px #ff6347 solid;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.customSelectTall{
+    padding: 10pt;
+    width: 70%;
+}
+.customSelectTall:hover{
+    border: 2px #47e3ff solid;
+}
+td .customSelect, td select.delInput{
+    width: 30%;
+    transition: 0.5s;
+    padding: 15px;
+}
+td .customSelect:hover, td select.delInput:hover{
+    width: 50%;
+    border: 2px #47e3ff solid;
+}
+.smallerSubmit {
+    width: 10% !important;
+    font-size: 12pt;
+    height: 24pt;
+    margin: 0;
+    padding: 4pt 0pt;
+    vertical-align: middle;
+}
+#formMargin{
+    margin-bottom: 40pt;
+}
+.debtorData{
+    border-collapse: collapse;
+    font-size: 16pt;
+}
+.debtorData th[colspan='9']{
+    font-size: 18pt;
+    text-transform: uppercase;
+    padding: 10pt 0;
+}
+.debtData{
+    border-collapse: collapse;
+    font-size: 14pt;
+}
+.debtData td{
+    padding: 0 !important;
+    margin: 0 !important;
+    border-spacing: 0 !important;
+}
+.debtData td input, .debtData td textarea , .debtData td select{
+    margin: 0;
+    padding: 15pt 0;
+    width: 70%;
+}
+.debtData td:nth-child(6) 
+{
+    width: 8%;
+}
+.debtData td:nth-child(3){
+    width: 15%;
+}
+.debtData td input:hover, .debtData td textarea:hover, .debtData td select:hover{
+    width: 70%;
+}
+.debtData td input[type="submit"]{
+    width: 100%;
+}
+.debtorData td input{
+    font-size: 14pt;
+}
+.debtorData th, .debtorData td, .debtData th, .debtData td{
+    border: 1px solid #ff6347;   
+}
+.debtData td{
+    padding: 0;
+}
+.debtorData td:last-child{
+    width: 11%;
+}
+.changeData{
+    width: 90%;
+    margin: 0;
+    padding: 10pt 0pt;
+}
+.changeData:hover{
+    width: 90% !important;
+}
+article{
+    padding: 20pt 50pt;
+}
+article img{
+    width: 200pt;
+    height: 200pt;
+    border: 4px solid #ff6347;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+article img:hover{
+    border-color: #47e3ff;
+}
+.firstDebtor{
+    text-align: left;
+    clear: both;
+}
+.secondDebtor{
+    text-align: right;
+    clear: both;
+}
+.firstDebtor img{
+    float: left;
+    margin-right: 40pt;
+}
+.secondDebtor img{
+    float: right;
+    margin-left: 40pt;
+}
+.info{
+    display: inline-block;
+}
+.info ul{
+    margin: 0;
+    padding: 0;
+}
+label{
+    text-align: center;
+}
+input[name="addPaid"]{
+    width: 5% !important;
+}
+td h3{
+    width: max-content; 
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 30px;
+    padding: 10px;
+}
+.usualLink:link, .usualLink:visited{
+    color: black !important;
+}
+.usualLink:hover, .usualLink:active{
+    color: #ff6347 !important;
+}
+h1 + h3{
+    font-size: 16pt;
+}
+.formTable td{
+    border-bottom: unset;
+    width: 25%;
+    text-align: center;
+}
+.showMoney{
+    border-collapse: collapse;
+}
+.showMoney th, .showMoney td{
+    font-size: 14pt;
+    padding: 10pt 0;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+.showMoney tr:first-child{
+    opacity: 100%;
+}
+.showMoney tr{
+    opacity: 60%;
+}
+.showMoney tr:hover{
+    opacity: 100%;
+}
+.paid{
+    background-color: greenyellow;
+}
+.paidEarly{
+    background-color: #47e3ff;
+}
+.notPaid{
+    background-color: rgb(250, 68, 68);
+}
+.upcoming{
+    background-color: rgb(255, 200, 0);
+}
+.mNotPaid{
+    color: rgb(250, 68, 68);
+}
+.mPaid{
+    color: green;
+}
+.mPaidEarly{
+    color: #47e3ff;
+}
+.mUpcoming{
+    color: rgb(255, 200, 0);
+}
+.winner{
+    border: goldenrod solid 10px;
+}
+.secondPlace{
+    border: silver solid 10px;
+}
+.thirdPlace{
+    border: #CD7F32 solid 10px;
+}
